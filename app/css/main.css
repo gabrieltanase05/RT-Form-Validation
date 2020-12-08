@@ -11,7 +11,7 @@
 -------------------------------------------------------------------------*/
 /*----------------------------------
   Colors
-# Colors are sorted by ascendant intensity
+# Colors are sorted ascending by intensity
 ----------------------------------*/
 /*-------------------------------------------------------------------------
 --> SETTINGS <--
@@ -28,8 +28,8 @@
 ----------------------------------*/
 /*----------------------------------
   Font-size - Type scaling
-# Scaling font-size starting from 1rem (10px) to 3.6rem (36px)
-# This range it's what we need in this project
+# Scaling font-size starting from 1.2rem (12px) to 2.6rem (26px)
+# This range is used throughout the project
 ----------------------------------*/
 /*-------------------------------------------------------------------------
 --> SETTINGS <--
@@ -46,16 +46,16 @@
 /*-------------------------------------------------------------------------
 --> TOOLS <--
 ---------------------------------------------------------------------------
-## FlexBox Parametric Mixins on different axis[X (row), Y(columns)]
+## FlexBox Parametric Mixins on different axis[X(row), Y(columns)]
 ## and different alignment
 -------------------------------------------------------------------------*/
 /*----------------------------------
   FlexBox
-# Using flex on parent align all straight children based on parameters
+# Using flex on parent aligns all straight children based on parameters
 ----------------------------------*/
 /*----------------------------------
-  Center on middle
-# Center elements on the middle of the container
+  Horizontal centering
+# Center elements in the middle of the container
 ----------------------------------*/
 /*-------------------------------------------------------------------------
 --> TOOLS <--
@@ -444,7 +444,7 @@ form {
   box-shadow: 0 2px 16px -3px rgba(94, 94, 94, 0.71);
   background-color: #F5F5F5;
   border-radius: 0.2rem;
-  margin-top: 10rem;
+  margin: 10rem 0;
   padding: 2.5rem;
   width: 600px;
 }
@@ -468,28 +468,28 @@ label {
   <Input>
 ----------------------------------*/
 input {
-  font-size: 1.8rem;
   background-color: #F5F5F5;
-  padding: 1rem 0.8rem 0 0.8rem;
-  margin-top: 0.8rem;
   border: none;
   border-bottom: 0.5rem solid darkgray;
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
   outline: none;
+  padding: 1rem 0.8rem 0 0.8rem;
 }
 /*----------------------------------
   <BUTTON>
 ----------------------------------*/
 button {
-  width: 150px;
-  font-size: 2.4rem;
-  padding: 1rem 1.5rem 1.1rem;
   background-color: #57D6C7;
-  font-weight: 800;
+  border: none;
   border-radius: 0.5rem;
   color: #F5F5F5;
-  border: none;
-  opacity: 0.8;
   cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 800;
+  opacity: 0.8;
+  padding: 1rem 1.5rem 1.1rem;
+  width: 150px;
 }
 button:hover {
   opacity: 1;
@@ -498,8 +498,8 @@ button:hover {
   <A>
 ----------------------------------*/
 a {
-  text-decoration: none;
   color: #FFF;
+  text-decoration: none;
 }
 /*----------------------------------
   OBJECTS
@@ -510,11 +510,11 @@ a {
 ## Container
 -------------------------------------------------------------------------*/
 .o-container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
 /*----------------------------------
   COMPONENTS
@@ -541,10 +541,10 @@ a {
 ## FORM
 -------------------------------------------------------------------------*/
 .c-form__title {
-  font-size: 24px;
-  padding: 5px 0;
-  margin: 1rem 1rem 3rem 1rem;
   border-bottom: 0.5rem solid #696969;
+  font-size: 24px;
+  margin: 1rem 1rem 3rem 1rem;
+  padding: 0.5rem 0;
 }
 /*-------------------------------------------------------------------------
 --> COMPONENTS <--
@@ -552,22 +552,22 @@ a {
 ## Success validation
 -------------------------------------------------------------------------*/
 .c-success {
-  text-align: center;
-  -webkit-box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
-  box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
-  padding: 5rem;
   border: 0.2rem solid #32CD32;
+  box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
+  -webkit-box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
+  padding: 5rem;
+  text-align: center;
 }
 .c-success__title {
   margin: 1.5rem;
 }
 .c-success__link {
-  text-decoration: none;
-  color: #57D6C7;
-  font-size: 2.2rem;
   border: 0.3rem solid #57D6C7;
   border-radius: 2.5rem;
+  color: #57D6C7;
+  font-size: 2.2rem;
   padding: 0.5rem;
+  text-decoration: none;
 }
 .c-success__link:hover {
   background-color: #57D6C7;

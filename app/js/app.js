@@ -20,7 +20,7 @@ xhr.onload = function() {
         document.querySelector('form').style.display='none';
     }
 }
-xhr.open('get', 'http://localhost:8080/api/regEx');
+xhr.open('get', 'https://form-and-plp-backend.herokuapp.com/api/regEx');
 xhr.send()
 
 document.addEventListener("DOMContentLoaded", function(e) {

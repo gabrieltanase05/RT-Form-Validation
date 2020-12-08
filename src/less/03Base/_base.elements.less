@@ -1,0 +1,76 @@
+/*-------------------------------------------------------------------------
+--> BASE <--
+---------------------------------------------------------------------------
+## Elements
+-------------------------------------------------------------------------*/
+
+
+/*----------------------------------
+  <Form>
+----------------------------------*/
+
+form {
+  .mq-max(@mq-tablet, {
+    width: 320px;
+  });
+  -webkit-box-shadow: 0 2px 16px -3px rgba(94,94,94,0.71);
+  box-shadow: 0 2px 16px -3px rgba(94,94,94,0.71);
+  background-color: @color_white-smoke;
+  border-radius: 0.2rem;
+  margin-top: 10rem;
+  padding: 2.5rem;
+  width: 600px;
+}
+
+/*----------------------------------
+  <Label>
+----------------------------------*/
+
+label {
+  .flex-box(@direction: column);
+  font-size: @font-size_scale-4;
+  margin: 0 2rem;
+}
+
+/*----------------------------------
+  <Input>
+----------------------------------*/
+
+input {
+  background-color: @color_white-smoke;
+  border: none;
+  border-bottom: 0.5rem solid darkgray;
+  font-size: @font-size_scale-5;
+  margin-top: 0.8rem;
+  outline: none;
+  padding: 1rem 0.8rem 0 0.8rem;
+}
+
+/*----------------------------------
+  <BUTTON>
+----------------------------------*/
+
+button {
+  background-color: @color_light-green;
+  border: none;
+  border-radius: .5rem;
+  color: @color_white-smoke;
+  cursor: pointer;
+  font-size: @font-size_scale-2;
+  font-weight: 800;
+  opacity: .8;
+  padding: 1rem 1.5rem 1.1rem;
+  width: 150px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/*----------------------------------
+  <A>
+----------------------------------*/
+
+a {
+  color: @color_white;
+  text-decoration: none;
+}

@@ -1,0 +1,30 @@
+/*-------------------------------------------------------------------------
+--> COMPONENTS <--
+---------------------------------------------------------------------------
+## Success validation
+-------------------------------------------------------------------------*/
+
+
+.c-success {
+  border: .2rem solid @color_lime-green;
+  box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
+  -webkit-box-shadow: 0 0.2rem 1.6rem -0.3rem rgba(94, 94, 94, 0.71);
+  padding: 5rem;
+  text-align: center;
+  &__title {
+    margin: 1.5rem;
+  }
+
+  &__link {
+    border: .3rem solid @color_light-green;
+    border-radius: 2.5rem;
+    color: @color_light-green;
+    font-size: @font-size_scale-3;
+    padding: .5rem;
+    text-decoration: none;
+    &:hover {
+      background-color: @color_light-green;
+      color: #FFF;
+    }
+  }
+}

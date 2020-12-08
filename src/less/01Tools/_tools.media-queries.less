@@ -1,0 +1,39 @@
+/*-------------------------------------------------------------------------
+--> TOOLS <--
+---------------------------------------------------------------------------
+## Media Query
+-------------------------------------------------------------------------*/
+
+
+/*----------------------------------
+  Media Queries with Parametric Mixins
+# Use Media Queries based on parameter for different ViewPort
+# [1] @setting will contain an 'object' with CSS properties
+----------------------------------*/
+
+/*----------------------------------
+  Min Width breakpoint
+----------------------------------*/
+.mq-min(@min-width, @settings /* [1] */){
+  @media (min-width: @min-width){
+    @settings()
+  }
+}
+
+/*----------------------------------
+  Max Width breakpoint
+----------------------------------*/
+.mq-max(@max-width, @settings /* [1] */){
+  @media (max-width: (@max-width - 1)){
+    @settings()
+  }
+}
+
+/*----------------------------------
+  Min and Max Width range breakpoint
+----------------------------------*/
+.mq-min(@min-width, @max-width, @settings /* [1] */){
+  @media (min-width: @min-width) and (max-width: (@max-width - 1)){
+    @settings()
+  }
+}

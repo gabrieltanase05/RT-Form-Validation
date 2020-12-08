@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Form validation">
+  <title>Form Validation</title>
+  <link rel="icon" href="favicon.ico" type="favicon" >
+  <link rel="stylesheet" href="css/main.css">
+  <script rel="prefetch" src="./js/app.js" type="module"></script>
+</head>
+<body>
+  <div class="o-container">
+    <form class="c-form" novalidate action="validation.html" method="post">
+      <label class="c-form__title">
+        <strong>
+          Form validation
+        </strong>
+      </label>
+      <label for="name">
+        First Name
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="First Name"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label for="surname">
+        Last Name
+        <input
+          id="surname"
+          type="text"
+          name="surname"
+          placeholder="Last Name"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label for="email">
+        Email Address
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="name@example.com"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label for="phone">
+        Phone number
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="+12 345 678 910"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label for="password">
+        Password
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Insert password"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label for="re-password">
+        Repeat password
+        <input
+          id="re-password"
+          type="password"
+          name="re-password"
+          placeholder="Repeat password"
+          required
+        />
+        <div class="c-errors">
+        </div>
+      </label>
+      <label class="u-align-center">
+        <button type="submit" value="Submit">Submit</button>
+      </label>
+    </form>
+  </div>
+</body>
+</html>
